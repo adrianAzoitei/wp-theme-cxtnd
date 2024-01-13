@@ -1,0 +1,24 @@
+/*!
+Theme Name: cxtnd
+Text Domain: cxtnd
+Version: 1.0
+Description: Custom theme made for Frum.
+Tags: rive, responsive, tailwindcss
+Author: Adrian Azoitei
+Author URI: https://github.com/adrianAzoitei
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
