@@ -613,6 +613,18 @@ video {
   max-width: 60%;
 }
 
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
+.max-w-\[100\%\] {
+  max-width: 100%;
+}
+
+.max-w-\[150\%\] {
+  max-width: 150%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -771,4 +783,10 @@ video {
 .hover\:bg-\[\#EBEBEB\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(235 235 235 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:max-w-\[60\%\] {
+    max-width: 60%;
+  }
 }
