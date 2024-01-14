@@ -2,10 +2,17 @@
   get_header();
 ?>
 <?php
-    $pagename = get_query_var('pagename');
-    $args = array( 'category_name' => $pagename );
+    $category = get_query_var('category');
+    if ($category == null) {
+        $category = 'mental-health';
+    }
+    $args = array( 'category_name' => $category );
 ?>
 
+<div class="nav flex flex-row">
+    <a class="nav-button <?php if ($category == 'mental-health') { echo 'active'; } ?>" href="/brain?category=mental-health">Mental health</a>
+    <a class="nav-button <?php if ($category == 'personal-development') { echo 'active'; } ?>" href="/brain?category=personal-development">Personal development</a>
+</div>
 <div class="flex-1 flex flex-col h-[100%] m-10">
     <?php        
         $myposts = get_posts( $args );
