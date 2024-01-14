@@ -7,7 +7,16 @@
     <!-- <link rel="icon" type="image/svg" href="..." /> -->
 
     <!-- Primary Meta Tags -->
-    <title>Eat, explore, evolve</title>
+    <title>
+      <?php 
+        $title = get_the_title();
+        if ($title == "Landing Page") {
+          echo "Eat, explore, evolve";
+        } else {
+          echo $title;
+        }
+      ?>
+    </title>
     <meta name="title" content="Eat, explore, evolve" />
     <meta name="description" content="Personal website." />
     <?php
@@ -15,4 +24,4 @@
     ?>
   </head>
   <body>
-    <div class="flex flex-col justify-center items-center bg-base-100e min-h-[100svh] bg-background text-text font-helvetica">
+    <div class="flex flex-col justify-between items-center bg-base-100e min-h-[100svh] bg-background text-text font-helvetica">

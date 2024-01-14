@@ -29,7 +29,7 @@ module.exports = {
 		  },
 		colors: {
 			'background': '#FFFFFF',
-			'text': '#F1FAEE',
+			'text': '#14171C',
 			'link': '#E63946'
 			}
 	},
