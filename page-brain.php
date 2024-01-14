@@ -9,10 +9,10 @@
     $args = array( 'category_name' => $category );
 ?>
 
-<div class="nav flex flex-row">
-    <a class="nav-button <?php if ($category == 'mental-health') { echo 'active'; } ?>" href="/brain?category=mental-health">Mental health</a>
-    <a class="nav-button <?php if ($category == 'personal-development') { echo 'active'; } ?>" href="/brain?category=personal-development">Personal development</a>
-</div>
+<?php
+    get_template_part('template-parts/content', 'category-menu');
+?>
+
 <div class="flex-1 flex flex-col h-[100%] m-10">
     <?php        
         $myposts = get_posts( $args );
