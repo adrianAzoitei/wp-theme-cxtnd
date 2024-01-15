@@ -4,7 +4,7 @@
 
 <div class="flex flex-row w-full justify-center border-solid border-t-[1px] border-b-[1px] border-[#EBEBEB]">
     <?php        
-        $pages = ['Food', 'Brain', 'Travel'];
+        $pages = ['Food', 'Brain', 'Travel', 'About'];
         foreach ( $pages as $page ):
     ?>
     <a href="/<?php echo $page ?>">

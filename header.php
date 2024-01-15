@@ -25,9 +25,11 @@
   </head>
   <body>
     <div class="flex flex-col justify-between items-center bg-base-100e min-h-[100svh] bg-background text-text font-helvetica">
-      <a href="/"><div class="heading text-2xl font-bold my-5">eat, explore, evolve</div></a>
-      <?php
-        if (!is_front_page()) {
-          get_template_part('template-parts/content', 'menu');
-        }
-      ?>
+        <div class="flex flex-col items-center w-[100%]">
+          <a href="/"><div class="heading text-2xl font-bold my-5">eat, explore, evolve</div></a>
+          <?php
+            if (!is_front_page()) {
+              get_template_part('template-parts/content', 'menu');
+            }
+          ?>
+        </div>

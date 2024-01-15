@@ -29,6 +29,8 @@ module.exports = {
 		  },
 		colors: {
 			'background': '#FFFFFF',
+			'post-hover': '#E3FFEC',
+			'post-excerpt': '#8C8C8C',
 			'text': '#14171C',
 			'link': '#E63946'
 			}
