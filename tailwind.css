@@ -63,7 +63,6 @@ Author URI: https://github.com/adrianAzoitei
 .post-thumbnail {
     background-color: black;
     width: 100px;
-    /* height: 100%; */
     display: inline-block; /* makes it fit in like an <img> */
     background-size: cover; /* or contain */
     background-position: center center;
@@ -71,7 +70,7 @@ Author URI: https://github.com/adrianAzoitei
 }
 
 .post-thumbnail-img {
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
     object-fit: cover;
 }

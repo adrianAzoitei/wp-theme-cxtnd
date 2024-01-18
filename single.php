@@ -2,7 +2,7 @@
   get_header();
 ?>
 
-<div class="flex flex-col justify-start items-start w-[40%] bg-blue">
+<div class="flex-1 flex flex-col justify-start items-start w-[40%] my-5">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     <div class="text-lg font-bold my-3"> <?php the_title(); ?> </div>

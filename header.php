@@ -9,11 +9,10 @@
     <!-- Primary Meta Tags -->
     <title>
       <?php 
-        $title = get_the_title();
-        if ($title == "Landing Page") {
+        if (is_front_page()) {
           echo "Eat, explore, evolve";
         } else {
-          echo $title;
+          echo get_the_title();
         }
       ?>
     </title>
@@ -24,7 +23,7 @@
     ?>
   </head>
   <body>
-    <div class="flex flex-col justify-between items-center bg-base-100e min-h-[100svh] bg-background text-text font-helvetica">
+    <div class="flex flex-col justify-start items-center bg-base-100e min-h-[100svh] bg-background text-text font-helvetica">
         <div class="flex flex-col items-center w-[100%]">
           <a href="/"><div class="heading text-2xl font-bold my-5">eat, explore, evolve</div></a>
           <?php
