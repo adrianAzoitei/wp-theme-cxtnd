@@ -17,7 +17,16 @@
     <?php endif; ?>
 </div>
 
+<script>
+    // Get the paragraph element
+    const textElement = document.querySelector('.hidden-text');
+    const triggerElement = document.querySelector('.trigger');
 
+    // Add a click event listener to the paragraph
+    triggerElement.addEventListener('click', function () {
+      textElement.classList.add('visible-text');
+    });
+</script>
 <?php
     get_footer();
 ?>

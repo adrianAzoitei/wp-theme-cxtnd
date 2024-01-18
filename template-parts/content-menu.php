@@ -12,7 +12,7 @@
     ?>
     <a href="/<?php echo $page->post_name ?>">
         <div class="hover:bg-[#EBEBEB] relative items-center justify-center px-6 py-5 <?php if (strcasecmp($pagename, $page->post_name) == 0) { echo 'active'; } ?>">
-            <?php echo ucfirst($page->post_name) ?>
+            <?php echo ucfirst(str_replace('-', ' ', $page->post_name)) ?>
         </div>
     </a>
     <?php endforeach; 

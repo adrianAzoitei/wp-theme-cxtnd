@@ -598,6 +598,10 @@ video {
   margin-top: -50px;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -859,6 +863,20 @@ video {
   width: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.hidden-text {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.visible-text {
+  opacity: 1;
+}
+
+.trigger {
+  cursor: pointer;
+  /* Add a pointer cursor to indicate it's clickable */
 }
 
 .hover\:bg-\[\#EBEBEB\]:hover {

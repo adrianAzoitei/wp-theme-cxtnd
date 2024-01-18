@@ -74,3 +74,16 @@ Author URI: https://github.com/adrianAzoitei
     width: 100px;
     object-fit: cover;
 }
+
+.hidden-text {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+
+  .visible-text {
+    opacity: 1;
+  }
+
+.trigger {
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+}
