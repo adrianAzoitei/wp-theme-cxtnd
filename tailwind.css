@@ -59,3 +59,19 @@ Author URI: https://github.com/adrianAzoitei
     height: 0.5px;
     background-color: #8C8C8C; /* Adjust the color as needed */
   }
+
+.post-thumbnail {
+    background-color: black;
+    width: 100px;
+    /* height: 100%; */
+    display: inline-block; /* makes it fit in like an <img> */
+    background-size: cover; /* or contain */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.post-thumbnail-img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
