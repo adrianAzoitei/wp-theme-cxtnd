@@ -10,14 +10,14 @@
     <title>
       <?php 
         if (is_front_page()) {
-          echo "Eat, explore, evolve";
+          echo get_bloginfo('name');
         } else {
           echo get_the_title();
         }
       ?>
     </title>
-    <meta name="title" content="Eat, explore, evolve" />
-    <meta name="description" content="Personal website." />
+    <meta name="title" content="<?php echo get_bloginfo('name') ?>" />
+    <meta name="description" content="<?php echo get_bloginfo('description') ?>" />
     <?php
       wp_head();
     ?>
