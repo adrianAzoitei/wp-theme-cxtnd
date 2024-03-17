@@ -2,10 +2,10 @@
   get_header();
 ?>
 
-<div class="flex-1 flex flex-col justify-start items-start w-[40%] my-5">
+<div class="post-view flex-1 flex flex-col justify-start items-start w-[80%] md:w-[40%] my-5">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="text-lg font-bold my-3"> <?php the_title(); ?> </div>
+    <div class="text-3xl font-bold my-3"> <?php the_title(); ?> </div>
     <div class="font-light text-post-excerpt"><?php the_excerpt(); ?></div>
     <div class="font-light my-1 text-xs text-post-excerpt"><?php echo get_the_date(); ?></div>
 

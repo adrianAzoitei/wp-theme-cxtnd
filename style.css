@@ -598,13 +598,6 @@ video {
   margin-top: -50px;
 }
 
-.line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
-
 .flex {
   display: flex;
 }
@@ -625,24 +618,16 @@ video {
   width: 100%;
 }
 
-.w-\[35\%\] {
-  width: 35%;
-}
-
 .w-\[40\%\] {
   width: 40%;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-\[65\%\] {
-  width: 65%;
-}
-
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-\[100\%\] {
@@ -760,6 +745,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-lg {
@@ -887,6 +877,34 @@ video {
   /* Add a pointer cursor to indicate it's clickable */
 }
 
+.post-view h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.post-view h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.post-view p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-view ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.post-view ol li {
+  margin-left: 1.25rem;
+}
+
 .hover\:bg-\[\#EBEBEB\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(235 235 235 / var(--tw-bg-opacity));
@@ -900,6 +918,10 @@ video {
 @media (min-width: 768px) {
   .md\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
   }
 
   .md\:max-w-\[60\%\] {

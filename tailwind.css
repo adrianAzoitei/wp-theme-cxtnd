@@ -87,3 +87,26 @@ Author URI: https://github.com/adrianAzoitei
 .trigger {
     cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
 }
+
+.post-view h1 {
+    @apply my-4;
+    @apply text-2xl
+}
+
+.post-view h2 {
+    @apply my-4;
+    @apply text-lg
+}
+
+.post-view p {
+    @apply my-3
+}
+
+.post-view ol {
+    @apply list-decimal;
+    @apply list-inside
+}
+
+.post-view ol li {
+    @apply ml-5
+}
