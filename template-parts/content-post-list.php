@@ -9,7 +9,7 @@
                 <div class="flex flex-row items-start justify-between w-[100%]">
                     <div class="flex flex-col justify-start h-[100%] mr-10">
                         <p class="text-lg font-bold"><?php the_title(); ?></p>
-                        <div class="font-light text-post-excerpt text-sm line-clamp-1"><?php the_excerpt(); ?></div>
+                        <div class="font-light text-post-excerpt text-sm text-wrap"><?php the_excerpt(); ?></div>
                     </div>
                     <img class="post-thumbnail-img rounded-lg" src="<?php echo the_post_thumbnail_url() ?>"/>
                 </div>
