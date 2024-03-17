@@ -1,4 +1,4 @@
-<div class="flex-1 flex flex-col h-[100%] w-[35%] m-10">
+<div class="flex-1 flex flex-col h-[100%] w-[80%] md:w-[35%] m-10">
     <?php        
         $myposts = get_posts( $args );
         foreach ( $myposts as $key=>$post ) : setup_postdata( $post ); 

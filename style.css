@@ -637,6 +637,14 @@ video {
   width: 100%;
 }
 
+.w-\[65\%\] {
+  width: 65%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .max-w-\[100\%\] {
   max-width: 100%;
 }
@@ -890,6 +898,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:w-\[35\%\] {
+    width: 35%;
+  }
+
   .md\:max-w-\[60\%\] {
     max-width: 60%;
   }
