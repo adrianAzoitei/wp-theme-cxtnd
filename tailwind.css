@@ -107,6 +107,11 @@ Author URI: https://github.com/adrianAzoitei
     @apply list-inside
 }
 
-.post-view ol li {
+.post-view ul {
+    @apply list-disc;
+    @apply list-inside
+}
+
+.post-view ol ul li {
     @apply ml-5
 }
